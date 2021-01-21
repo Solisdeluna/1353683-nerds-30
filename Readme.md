@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [S S](https://up.htmlacademy.ru/htmlcss/30/user/1353683).
-* Наставник: `Неизвестно`.
+* Наставник: [Юрий Мамаев](https://htmlacademy.ru/profile/id888525).
 
 ---
 
