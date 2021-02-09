@@ -10,6 +10,16 @@
   --Special-green: #00CA74;
   --Special-yellow: #EFC849;
 
+/* Hover */
+--hover-red: #E74246;
+--hover-green: #00BC6C;
+--hover-yellow: #EAB534;
+
+/* Focus */
+--focus-red: #D7373B;
+--focus-green: #00AA62;
+--focus-yellow: #E5A722;
+
 }
 
 /* Global */
@@ -25,7 +35,6 @@ body {
     color: var(--basic-black);
     text-transform: uppercase;
     background-color: var(--basic-white);
-    background-image: url("../img/bg.jpg");
     background-position: top center;
     background-repeat: no-repeat;
   }
@@ -63,8 +72,7 @@ body {
   
   /* User navigation */
   
-  
-  .site-navigation a,
+    .site-navigation a,
   .user-navigation a {
     color: var(--basic-black);
   }
@@ -77,6 +85,49 @@ body {
   }
 
   /* Slider */
+
+.slider {
+background-color: var (basic-neutral);
+  background-image: url("img/nerds-index-slide1-1.jpg");
+  background-image: url("img/nerds-index-slide2-1.jpg");
+  background-image: url("img/nerds-index-slide3-1.jpg");
+  background-position: center, 0 0;
+  background-repeat: no-repeat, repeat;
+}
+
+.slider-title {
+  font-size: 55px;
+  line-height: 55px;
+  text-align: left;
+  color: var(basic-black);
+}
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: var(--Basic-black);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--special-red);
+  border: none;
+}
+
+.button:hover {
+  background-color: var(--hover-red);
+}
+.button:focus{
+  background-color: var(--focus-red);  
+}
+.button:active {
+  background-color: var(--special);
+}
+
+.button.disabled,
+.button:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: var(--special-red);
+}
 
   /* Services */
 
@@ -92,3 +143,9 @@ body {
     font-size: 24px;
     line-height: 30px;
   }
+
+    /* Contacts */
+
+.contacts-phone {
+  color: inherit;
+}
