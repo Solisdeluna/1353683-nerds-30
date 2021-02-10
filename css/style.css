@@ -1,14 +1,15 @@
 /* Variables */
 
 :root {
-  --Basic-black: #000000;
-  --Basic-neutral: #EEEEEE;
-  --Basic-dark: #E1E1E1;
-  --Basic-white: #FFFFFF;
+  --basic-black: #000000;
+  --basic-neutral: #EEEEEE;
+  --basic-dark: #E1E1E1;
+  --basic-white: #FFFFFF;
 
-  --Special-red: #FB565A;
-  --Special-green: #00CA74;
-  --Special-yellow: #EFC849;
+  --special-red: #FB565A;
+  --special-green: #00CA74;
+  --special-yellow: #EFC849;
+  --special-grey: #E1E1E1;
 
 /* Hover */
 --hover-red: #E74246;
@@ -75,6 +76,7 @@ body {
     .site-navigation a,
   .user-navigation a {
     color: var(--basic-black);
+    text-decoration: underline;
   }
   
   .site-navigation a:hover,
@@ -86,14 +88,26 @@ body {
 
   /* Slider */
 
-.slider {
+.slider-iphones {
 background-color: var (basic-neutral);
   background-image: url("img/nerds-index-slide1-1.jpg");
-  background-image: url("img/nerds-index-slide2-1.jpg");
-  background-image: url("img/nerds-index-slide3-1.jpg");
   background-position: center, 0 0;
   background-repeat: no-repeat, repeat;
 }
+
+.slider-desktops {
+  background-color: var (basic-neutral);
+    background-image: url("img/nerds-index-slide2-1.jpg");
+    background-position: center, 0 0;
+    background-repeat: no-repeat, repeat;
+  }
+
+  .slider-iphone-desktop {
+    background-color: var (basic-neutral);
+      background-image: url("img/nerds-index-slide3-1.jpg");
+      background-position: center, 0 0;
+      background-repeat: no-repeat, repeat;
+    }
 
 .slider-title {
   font-size: 55px;
@@ -148,4 +162,58 @@ background-color: var (basic-neutral);
 
 .contacts-phone {
   color: inherit;
+}
+
+/* Main footer */
+
+.main-footer {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.footer-social {
+  text-align: left;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-social h2 {
+  font-size: 36px;
+
+}
+
+/* Social button */
+
+.social-button {
+  color: var(--basic-white);
+  background-color: var(--special-grey);
+}
+
+.social-button:hover {
+  background-color: var(--hover-red);
+}
+
+.social-button:focus {
+  background-color: var(--focus-red);
+  opacity: 0.3;
+}
+
+/* Modal */
+
+.modal {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  background-image: url("../img/pattern-white.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.modal-title h2 {
+  font-size: 45px;
+  line-height: 53px;
 }
